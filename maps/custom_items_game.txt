@@ -1,0 +1,305 @@
+// -----------------------------------------------------------------------------
+// Welcome to the Peels' Weapon Workshop Pack! This is one of the main files.
+// -----------------------------------------------------------------------------
+"custom_items_game"
+{
+	"items"
+	{
+		"8801"
+		{
+			"name"						"TF_WEAPON_COMICALLYLARGE_REVOLVER"
+			"prefab"					"weapon_revolver"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+
+			"propername"				"0"
+			"item_quality"				"rarity4"
+			"item_name"					"Silly Huge Ego"
+			"item_type_name"			"Comically Large Revolver"
+			"item_description"			"This weapon shoots its entire clip all at once
+
+I've fucking had it with you.
+
+Model by: goober of the goof
+Custom Weapon by: FPeely + TheSnaz"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"Revolver"
+			"image_inventory"			"backpack/weapons/c_models/c_comicallylargerevolver"
+			"model_world"				"models/weapons/c_models/c_revolver/c_comicallylargerevolver.mdl"
+			"model_player"				"models/weapons/c_models/c_revolver/c_comicallylargerevolver.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"spy"					"1"
+			}
+			"attributes"
+			{
+				"can headshot"
+				{
+					"attribute_class"	"can_headshot"
+					"value"				"1"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"2.0"
+				}
+				"mod ammo per shot"
+				{
+					"attribute_class"	"mod_ammo_per_shot"
+					"value"				"6.0"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"3.0"
+				}
+			}
+		}
+		"8802"
+		{
+			"name"						"TF_WEAPON_BURST_SNIPER"
+			"prefab"					"weapon_sniperrifle"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_quality"				"rarity6"
+			"item_name"					"Soviet Sourvenir"
+			"item_type_name"			"Modified Assault Rifle"
+			"item_description"			"
+And another one!
+
+Model by: Corvalho
+Custom Weapon by: FPeely + TheSnaz"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"Revolver"
+			"image_inventory"			"backpack/weapons/c_models/c_sovietsouvenir/c_sovietsouvenir"
+			"model_world"				"models/weapons/c_models/c_sovietsouvenir/c_sovietsouvenir.mdl"
+			"model_player"				"models/weapons/c_models/c_sovietsouvenir/c_sovietsouvenir.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"sniper"					"1"
+			}
+                        "static_attrs"
+			{
+            }
+			"attributes"
+			{
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"0.6"
+				}
+				"can headshot"
+				{
+					"attribute_class"	"can_headshot"
+					"value"				"1"
+				}
+				"sniper no dmg charge"
+				{
+					"attribute_class"	"mod_sniper_no_dmg_charge"
+					"value"				"1"
+				}
+                "damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.75"
+				}
+			}
+		}
+	     "8803"
+		{
+			"name"						"TF_WEAPON_GARAND"
+			"prefab"					"weapon_sniperrifle"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+
+			"propername"				"1"
+			"item_quality"				"rarity6"
+			"item_name"					"Makeshift Mauser"
+			"item_type_name"			"Hunting Rifle"
+			"item_description"			"
+''I''
+
+Model by: PLACEHOLDER
+Custom Weapon by: FPeely + TheSnaz"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"Revolver"
+//			"image_inventory"			"backpack/workshop/weapons/c_models/c_makeshift_mauser/c_makeshift_mauser"   DISABLED UNTIL WE FIX THE ICON
+			"model_world"				"models/workshop/weapons/c_models/c_makeshift_mauser/c_makeshift_mauser.mdl"
+			"model_player"				"models/workshop/weapons/c_models/c_makeshift_mauser/c_makeshift_mauser.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"scout"					"1"
+			}
+                        "static_attrs"
+			{
+            }
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"10"
+				}
+				"can headshot"
+				{
+					"attribute_class"	"can_headshot"
+					"value"				"1"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"-50"
+				}
+				"sniper no dmg charge"
+				{
+					"attribute_class"	"mod_sniper_no_dmg_charge"
+					"value"				"1"
+				}
+                "no scope"
+				{
+					"attribute_class"	"mod_no_scope"
+					"value"				"1"
+				}
+			}
+		}
+		"8804"
+		{
+			"name"						"TF_WEIGHTYKILLER"
+			"prefab"					"weapon_shotgun"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+
+			"propername"				"1"
+			"item_quality"				"rarity6"
+			"item_name"					"Weighty Killer"
+			"item_type_name"			"Heavy Shotgun"
+			"item_description"			"
+And another one!
+
+Model by: PLACEHOLDER
+Custom Weapon by: FPeely + TheSnaz"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"Revolver"
+//			"image_inventory"			"materials/backpack/weapons/c_models/c_knifegun"   DISABLED UNTIL WE FIX THE ICON
+			"model_world"				"models/weapons/c_models/c_knifegun/c_knifegun.mdl"
+			"model_player"				"models/weapons/c_models/c_knifegun/c_knifegun.mdl"
+			"attach_to_hands"			"1"
+			"used_by_classes"
+			{
+				"heavy"					"1"
+			}
+                        "static_attrs"
+			{
+				"damage bonus"						"8"
+				"weapon spread bonus"				"0"
+				"bullets per shot penalty"			"0.1"
+				"no damage falloff over distance" 	"1"
+            }
+			"attributes"
+			{
+			}
+		}
+		"8805"
+		{
+			"name"						"TF_PHLAUNCHER"
+			"prefab"					"weapon_pistol"
+			"show_in_armory"				"1"
+			"item_slot"					"primary"
+
+			"propername"				"0"
+			"item_quality"				"rarity4"
+			"item_name"					"Silly Glock-17"
+			"item_type_name"			"In Development"
+			"item_description"			"
+''I got a glock in my payload cart'' - Demo
+
+Model by: PLACEHOLDER
+Custom Weapon by: FPeely + TheSnaz"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"Revolver"
+//			"image_inventory"			"materials/backpack/weapons/c_models/c_knifegun"   DISABLED UNTIL WE FIX THE ICON
+			"model_world"				"models/weapons/w_models/w_pistol_scout.mdl"
+			"model_player"				"models/weapons/v_models/v_pistol_scout.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"demoman"					"1"
+				"spy"						"1"
+			}
+                        "static_attrs"
+			{
+				"punch angle mod mult hidden"	"0"
+				"mod max primary clip override" "17"
+				"mod ammo per reload" "17"
+				"damage bonus"		"1.23"
+				"maxammo primary increased" "3"
+				"fire rate penalty"		"1.5"
+            }
+			"attributes"
+			{				
+			}
+		}
+		"9812"
+		{
+			"name"						"TF_WEAPON_HLDM_CROSSBOW"
+			"prefab"					"weapon_pistol"
+			"item_class"				"tf_weapon_sniperrifle"
+			"show_in_armory"			"1"
+			"item_slot"					"secondary"
+			"bucket"					"1"
+
+			"propername"				"1"
+			"item_name"					"Targeted Advertising"
+			"item_type_name"				"Government property"
+			"item_description"			"This weapon fires an explosive hitscan bullet when scoped and an arrow when unscoped
+
+Watch your head or else you'll get Hot Potat0wned!
+
+Model by: goober of the goof
+Custom Weapon by: TheSnaz + FPeely"
+			"item_logname"				"test_weapon"
+//			"item_iconname"				"Revolver"
+			"image_inventory"			"backpack/weapons/models/w_comicallylargerevolver"
+			"model_world"				"models/weapons/w_models/w_crossbow.mdl"
+			"model_player"				"models/weapons/v_models/v_crossbow.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"soldier"					"1"
+			}
+			"static_attrs"
+			{
+				"override projectile type zoomed"	"1"
+				"override projectile type"			"8"
+				"explosive bullets"					"1"
+				"mod max primary clip override"		"5"
+				"sniper no dmg charge"				"1"
+				"custom falloff"					"0.2"
+			}
+			"attributes"
+			{
+				"damage bonus"
+				{
+					"attribute_class"		"mult_dmg"
+					"value"			"1.4"
+				}
+				"fire rate penalty hidden"
+				{
+					"attribute_class"		"mult_postfiredelay"
+					"value"			"1.3"
+				}
+				"fire rate penalty hidden"
+				{
+					"attribute_class"		"mult_postfiredelay"
+					"value"			"1.3"
+				}
+			}
+		}
+	
+	}
+}

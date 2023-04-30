@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack\weapons\c_models\c_sovietsouvenir\c_sovietsouvenir"
+	$translucent 1
+	$vertexcolor 1
+}

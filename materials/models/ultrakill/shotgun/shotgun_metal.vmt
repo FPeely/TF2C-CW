@@ -1,0 +1,46 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/Ultrakill/Shotgun/shotgun_metal"
+	"$bumpmap" 			"models/Ultrakill/Shotgun/shotgun_metal_n"
+	
+	"$phong" "1"
+	"$phongtint" "[0.85 0.85 0.85]"
+	"$phongexponent" "0.66"
+	"$phongboost" "0.01"	
+	"$phongfresnelranges"	"[1 2 4]"
+	"$halflambert" "1"
+	
+	"$lightwarptexture"		"models\lightwarps\weapon_lightwarp"
+	
+	"$nocull" "1"
+
+	// Rim lighting parameters
+	"$rimlight" "1"			
+	"$rimlightexponent" "4"	
+	"$rimlightboost" "0.5"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

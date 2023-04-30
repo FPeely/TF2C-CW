@@ -1,0 +1,49 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/Ultrakill/Revolver/revolver_screen_green"
+	"$bumpmap" 			"models/Ultrakill/flat_n"
+	
+	"$phong" "1"
+	"$phongtint" "[0.85 0.85 0.85]"
+	"$phongexponent" "0.66"
+	"$phongboost" "0.01"	
+	"$phongfresnelranges"	"[1 2 4]"
+	"$halflambert" "1"
+
+	"$lightwarptexture"		"models/player/pyro/pyro_lightwarp"	//"$lightwarptexture" "models\lightwarps\robot_lightwarp"
+	
+	"$nocull" "1"
+	"$selfillum" "1"
+	$selfillummask	"models/Ultrakill/Revolver/Revolver_Screen_SI"
+
+	// Rim lighting parameters
+	"$rimlight" "1"			
+	"$rimlightexponent" "4"	
+	"$rimlightboost" "0.5"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}
+
