@@ -112,7 +112,8 @@ Custom Weapon by: FPeely + TheSnaz"
 	     "8803"
 		{
 			"name"						"TF_WEAPON_GARAND"
-			"prefab"					"weapon_sniperrifle"
+			"prefab"					"weapon_scattergun"
+			"item_class"				"tf_weapon_sniperrifle"
 			"show_in_armory"			"1"
 			"item_slot"					"primary"
 
@@ -121,7 +122,7 @@ Custom Weapon by: FPeely + TheSnaz"
 			"item_name"					"Makeshift Mauser"
 			"item_type_name"			"Hunting Rifle"
 			"item_description"			"
-''I''
+''Can't hit what aint there!''
 
 Model by: PLACEHOLDER
 Custom Weapon by: FPeely + TheSnaz"
@@ -184,7 +185,7 @@ And another one!
 Model by: PLACEHOLDER
 Custom Weapon by: FPeely + TheSnaz"
 			"item_logname"				"test_weapon"
-//			"item_iconname"				"Revolver"
+			"item_iconname"				"Weighty Killer"
 //			"image_inventory"			"materials/backpack/weapons/c_models/c_knifegun"   DISABLED UNTIL WE FIX THE ICON
 			"model_world"				"models/weapons/c_models/c_knifegun/c_knifegun.mdl"
 			"model_player"				"models/weapons/c_models/c_knifegun/c_knifegun.mdl"
@@ -207,29 +208,30 @@ Custom Weapon by: FPeely + TheSnaz"
 		"8805"
 		{
 			"name"						"TF_PHLAUNCHER"
-			"prefab"					"weapon_pistol"
+			"prefab"					"weapon_grenade_launcher"
+			"item_class"				"tf_weapon_pistol"
 			"show_in_armory"				"1"
 			"item_slot"					"primary"
+			"bucket"					"0"
 
 			"propername"				"0"
 			"item_quality"				"rarity4"
 			"item_name"					"Silly Glock-17"
-			"item_type_name"			"In Development"
+			"item_type_name"			"Pistol"
 			"item_description"			"
-''I got a glock in my payload cart'' - Demo
+''I got a glock in my Rari''
 
 Model by: PLACEHOLDER
 Custom Weapon by: FPeely + TheSnaz"
 			"item_logname"				"test_weapon"
-//			"item_iconname"				"Revolver"
+			"item_iconname"				"Glock-17"
 //			"image_inventory"			"materials/backpack/weapons/c_models/c_knifegun"   DISABLED UNTIL WE FIX THE ICON
-			"model_world"				"models/weapons/w_models/w_pistol_scout.mdl"
+			"model_world"				"models/weapons/w_models/w_pistol.mdl"
 			"model_player"				"models/weapons/v_models/v_pistol_scout.mdl"
 			"attach_to_hands"			"2"
 			"used_by_classes"
 			{
 				"demoman"					"1"
-				"spy"						"1"
 			}
                         "static_attrs"
 			{
@@ -239,65 +241,104 @@ Custom Weapon by: FPeely + TheSnaz"
 				"damage bonus"		"1.23"
 				"maxammo primary increased" "3"
 				"fire rate penalty"		"1.5"
-            }
+			}
 			"attributes"
 			{				
 			}
 		}
-		"9812"
+		"9573"
 		{
-			"name"						"TF_WEAPON_HLDM_CROSSBOW"
-			"prefab"					"weapon_pistol"
-			"item_class"				"tf_weapon_sniperrifle"
-			"show_in_armory"			"1"
+			"name"					"TF_WEAPON_HLDM_CROSSBOW"
+			"prefab"					"weapon_shotgun"
+			"item_class"				"tf_weapon_hunterrifle"
+			"show_in_armory"				"1"
 			"item_slot"					"secondary"
 			"bucket"					"1"
 
 			"propername"				"1"
-			"item_name"					"Targeted Advertising"
-			"item_type_name"				"Government property"
+			"item_rarity"				"rarity2"
+			"item_name"					"Targetted Advertising"
+			"item_type_name"				"Comically Large Revolver"
 			"item_description"			"This weapon fires an explosive hitscan bullet when scoped and an arrow when unscoped
 
 Watch your head or else you'll get Hot Potat0wned!
 
 Model by: goober of the goof
-Custom Weapon by: TheSnaz + FPeely"
+Custom Weapon by: FPeely + TheSnaz"
 			"item_logname"				"test_weapon"
 //			"item_iconname"				"Revolver"
-			"image_inventory"			"backpack/weapons/models/w_comicallylargerevolver"
-			"model_world"				"models/weapons/w_models/w_crossbow.mdl"
-			"model_player"				"models/weapons/v_models/v_crossbow.mdl"
-			"attach_to_hands"			"2"
+//			"image_inventory"				"backpack/weapons/c_models/c_comicallylargerevolver"
+			"model_world"				"models/weapons/w_models/w_shotgun.mdl"
+			"model_player"				"models/weapons/v_models/v_shotgun_soldier.mdl"
+			"attach_to_hands"				"2"
 			"used_by_classes"
 			{
 				"soldier"					"1"
 			}
 			"static_attrs"
 			{
-				"override projectile type zoomed"	"1"
+				"override projectile type zoomed"		"1"
 				"override projectile type"			"8"
-				"explosive bullets"					"1"
-				"mod max primary clip override"		"5"
-				"sniper no dmg charge"				"1"
-				"custom falloff"					"0.2"
+				"explosive bullets"				"1"
+				"custom falloff"					"0.6"
+				"max health additive bonus"			"-25"
+				"no scope" 						"1"
 			}
 			"attributes"
 			{
 				"damage bonus"
 				{
 					"attribute_class"		"mult_dmg"
-					"value"			"1.4"
+					"value"			"1.7"
 				}
 				"fire rate penalty hidden"
 				{
 					"attribute_class"		"mult_postfiredelay"
 					"value"			"1.3"
 				}
-				"fire rate penalty hidden"
-				{
-					"attribute_class"		"mult_postfiredelay"
-					"value"			"1.3"
-				}
+			}
+		}
+		"8807"
+		{
+			"name"						"TF_MEDIC_SHOTGUN"
+			"prefab"					"weapon_syringegun"
+			"item_class"				"tf_weapon_shotgun"
+			"show_in_armory"				"1"
+			"item_slot"					"primary"
+			"bucket"					"0"
+
+			"propername"				"1"
+			"item_quality"				"rarity6"
+			"item_name"					"Hasty Surgery"
+			"item_type_name"			"Shotgun-Pistol Hybrid"
+			"item_description"			"
+''I am ze Übermensch!''
+
+Model by: PLACEHOLDER
+Custom Weapon by: FPeely + TheSnaz"
+			"item_logname"				"test_weapon"
+			"item_iconname"				"Hasty Surgery"
+//			"image_inventory"			"materials/backpack/weapons/c_models/c_knifegun"   DISABLED UNTIL WE FIX THE ICON
+			"model_world"				"models/weapons/w_models/w_pistol.mdl"
+			"model_player"				"models/weapons/v_models/v_pistol_scout.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"medic"					"1"
+			}
+                        "static_attrs"
+			{
+				"mod max primary clip override" "3"
+				"mod ammo per reload" "3"
+				"fire rate bonus"		"0.3"
+				"bullets per shot bonus"	"3"
+				"Reload time increased"		"2"
+				"spread penalty"		"10"
+				"damage penalty"		"0.55"
+				
+            }
+			"attributes"
+			{				
 			}
 		}
 	
