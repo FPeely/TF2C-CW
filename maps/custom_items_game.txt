@@ -318,7 +318,7 @@
 				"maxammo primary increased" "3.15"
 			}
 		}
-				"8842"
+				"8809"
 		{
 			"name"						"TF_WEAPON_FIRE_SHOTGUN"
 			"prefab"					"weapon_shotgun"
@@ -332,13 +332,13 @@
 			"item_description"			"
 Scorched and burned, these bullets will put an end to your misery
 
-				Model by: Corvalho
+				Model by: Svdl
 				Weapon from the ''Arsenal Insanity Pack''!"
 			"item_logname"				"Spitfire"
 			"item_iconname"				"shotgun"
-			"image_inventory"			"backpack/weapons/c_models/c_pyroshot"
-			"model_world"				"workshop/models/weapons/c_models/c_reserve_shooter/c_reserve_shooter.mdl"
-			"model_player"				"workshop/models/weapons/c_models/c_reserve_shooter/c_reserve_shooter.mdl"
+			"image_inventory"			"materials/backpack/weapons/c_models/c_reserve_shooter/c_reserve_shooter_large"
+			"model_world"				"models/weapons/c_models/c_reserve_shooter/c_reserve_shooter.mdl"
+			"model_player"				"models/weapons/c_models/c_reserve_shooter/c_reserve_shooter.mdl"
 			"attach_to_hands"			"1"
 			"used_by_classes"
 			{
@@ -348,17 +348,17 @@ Scorched and burned, these bullets will put an end to your misery
 				
 			{
 				"fire rate bonus"						"0.6"
-				"damage penalty"						"0.6"
+				"damage penalty"						"0.7"
 				"spread bonus"							"0.6"
 				"deploy time decreased"					"0.5"
-				"damage bonus vs burning"	 			"1.50"	
-				"add condition on hit weapon"			"69 2"
+				"damage bonus vs burning"	 			"1.30"	
+				"weapon burn dmg reduced"				"0.25"
 				"clip size penalty"						"0.60"
 				"hidden secondary max ammo penalty"		"0.5"
 				"Set DamageType Ignite"						"1"
 			}
 		}
-		"8809"
+		"8810"
 		{
 			"name"					"TF_WEAPON_GRAPPLE_SHOTGUN"
 			"prefab"					"weapon_shotgun"
